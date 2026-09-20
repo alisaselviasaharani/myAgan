@@ -1,0 +1,180 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: black;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header h3 {
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 25px;
+}
+
+header h3:hover {
+    color: red;
+}
+
+header nav {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    gap: 20px;
+    color: white;
+    font-size: 25px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: red;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+}
+
+.home {
+    background-color: black;
+}
+
+.home h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+.home-1 h2 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.video {
+    text-align: center;
+}
+
+.video h3{
+    color:white;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer {
+    background: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-top: 3px solid #555;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.15);
+}
+
+footer p {
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+.foto {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.about {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.5);
+    width: 37%;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px gray;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+}
+
+.card p{
+    font-size: 20px;
+    text-align: left;
+    padding-left:10px ;
+}
+.card:hover{
+    transform: translateY(36.5) scale(1.2);
+    background: white;
+}
+
+.afgan-bg {
+    background-image: linear-gradient(rgba(20, 35, 40, 0.38), rgba(20, 35, 40, 0.38)), url("/static/img/afgan-2025.png");
+}
+
+.collection h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.collection-agan{
+    text-align: left;
+    padding-left: 30px;
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+    margin: 0 auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.collection p{
+    color: white;
+}
+
+.foto-imut{
+    margin: 0 auto;
+    width: auto;
+    height: 500px;
+}
+
+.collection-text{
+    width: 50%;
+    font-size:17px;
+    line-height: 1.5;
+}
+
+.card-afgan {
+    background: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px gray;
+    text-align: center;
+}
+
+.card-afgan:hover{
+    background: brown;
+    transform: translateY(-10px) scale(1.03);
+}
+
+.vid-agan{
+    text-align: center;
+    padding: 30px;
+    color: white;
+    gap: 0px;
+}

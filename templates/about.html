@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% block title %}
+About - Website Afgan Lovers
+{% endblock title %}
+
+{% block content %}
+
+<!-- <!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Afgan Lovers</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<div class="afgan-bg">
+
+    <body>
+        <header>
+            <a href="{% url 'main:show_home' %}">
+                <h3>Website Afgan Lovers</h3>
+            </a>
+            <nav>
+                <a href="{% url 'main:show_home' %}"> Home</a>
+                <a href="{% url 'main:show_about' %}"> About</a>
+                <a href="{% url 'main:show_collection' %}"> Collection </a>
+            </nav>
+        </header> -->
+
+
+    <div class="about">
+        <img class="foto" src="/static/img/afgan-2025.png" alt="Afgansyah">
+
+        <!-- <div class="card">
+                    <p><strong>Nama: </strong>{{ about.nama }} </p>
+                </div>
+
+                <div class="card">
+                    <p> Album yang diisi dengan 13 lagu ini kental terasa dipengaruhi gaya bermusik pop, soul, R&B, dan jazz
+                    </p>
+
+                </div> -->
+        {% for about in about_list %}
+        <div class="card">
+            <p><strong>Nama:</strong> {{ about.nama }}</p>
+        </div>
+
+        <div class="card">
+            <p><strong>Lahir:</strong> {{ about.lahir }}</p>
+        </div>
+
+        <div class="card">
+            <p><strong>Almamater:</strong> {{ about.almamater }}</p>
+        </div>
+
+        <div class="card">
+            <p><strong>Genre:</strong> {{ about.genre }}</p>
+        </div>
+
+        <div class="card">
+            <p><strong>Instrumen:</strong> {{ about.instrumen }}</p>
+        </div>
+
+        <div class="card">
+            <p><strong>Label:</strong></p> 
+            <p>{{ about.label }}</p>
+        </div>
+
+        <div class="card">
+            <p><strong>Deskripsi:</strong></p>
+            <p>{{ about.description }}</p>
+        </div>
+    </div>
+    {% endfor %}
+    </div>
+
+</body>
+</div>
+
+{% endblock content %}
+<!-- </html> -->
