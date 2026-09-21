@@ -69,7 +69,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'config.wsgi.application'
 
-
+CSRF_TRUSTED_ORIGINS = [
+    "https://150r24j5-8000.asse.devtunnels.ms",
+]
 # Database
 # https://docs.djangoproject.com/en/6.1/ref/settings/#databases
 

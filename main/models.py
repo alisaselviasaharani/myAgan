@@ -22,3 +22,26 @@ class About(models.Model):
     instrumen=models.CharField(choices=INSTRUMEN,blank=True,null=True)
     label=models.CharField(max_length=200)
     description=models.TextField()
+
+
+class Collection(models.Model):
+
+    JENIS_CHOICES = [
+        ("MV", "Music Video"),
+        ("LIVE", "Live Performance"),
+        ("COVER", "Cover"),
+    ]
+
+    judul = models.CharField(max_length=255)
+
+    jenis = models.CharField(
+        max_length=20,
+        choices=JENIS_CHOICES
+    )
+
+    label = models.CharField(max_length=255)
+
+    link = models.URLField()
+
+    def __str__(self):
+        return self.judul

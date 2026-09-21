@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}
+Add Collection
+{% endblock title %}
+
+{% block content %}
+
+<h1>Add Collection</h1>
+
+<form method="POST">
+    {% csrf_token %}
+
+    {{ form.as_p }}
+
+    <button type="submit">
+        Tambah
+    </button>
+</form>
+
+{% endblock content %}
